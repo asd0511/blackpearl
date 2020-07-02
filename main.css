@@ -1,0 +1,229 @@
+body {
+    font-family: 'IBM Plex mono', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Первый экран - Intro */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: #1f1f1f;
+    background-image: url(img/Logo.svg), url(img/logo-brushes.svg), url(img/strip.svg);
+    background-repeat: no-repeat;
+    background-position: center, center, bottom;
+    background-size: auto, auto, contain;
+}
+
+.header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Гамбургер*/
+
+.menu-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+}
+
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+    transform: rotate(-35deg);
+    width: 10px;
+    transform-origin: left bottom;
+}
+
+.menu-btn_active span:after {
+    transform: rotate(35deg);
+    width: 10px;
+    transform-origin: left top;
+}
+
+.menu-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: #222;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 1s;
+}
+
+.link-nav:hover {
+    color: #A65353;
+    transition: 0s;
+    box-shadow: 0 0 0 0px #fff;
+}
+
+.menu-nav {
+    transition: 0.2s;
+    transform: scaleX(0) translateX(0%);
+    transform-origin: right center;
+    opacity: 0;
+    visibility: hidden;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: -25px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.menu-nav_active {
+    transform: scaleX(1) translateX(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Конец Гамбургера */
+
+.insta-intro,
+.tel-intro {
+    display: flex;
+    align-items: center;
+}
+
+.insta-intro {
+    margin-top: 33px;
+}
+
+.text-intro {
+    background: linear-gradient(to left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #191919;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-call {
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon-intro {
+    padding-right: 30px;
+}
+
+main {
+    background-image: url(img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Услуги детейлинга начало*/
+
+.service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    width: 565px;
+    height: 370px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+}
+
+.link {
+    display: inline-block;
+    width: 100%;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    margin-left: 35px;
+    margin-top: 265px;
+}
+
+.car-wash {
+    background-image: url(img/car-wash.jpg);
+}
+
+.paint-disks {
+    background-image: url(img/paint-disks.jpg)
+}
+
+.deteiling {
+    background-image: url(img/detailing.jpg);
+}
+
+.tire-service {
+    background-image: url(img/tire-service.jpg);
+}
+
+.tint {
+    background-image: url(img/tint.jpg);
+}
+
+.pasting {
+    background-image: url(img/pasting.jpg);
+}
+
+.removing-dents {
+    background-image: url(img/removing-dents.jpg);
+}

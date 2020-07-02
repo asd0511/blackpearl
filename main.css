@@ -278,3 +278,41 @@ main {
 .block:nth-child(7) {
     grid-area: removing;
 }
+
+
+/* Форма обратного звонка */
+
+.call-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.number {
+    width: 453px;
+    height: 110px;
+    box-shadow: inset 2px 0 13px rgba(0, 0, 0, 0.6);
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.call-back_pic {
+    margin-right: 40px
+}
+
+.call-back_btn {
+    width: 173px;
+    height: 110px;
+    border: 3px solid #ffffff;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}

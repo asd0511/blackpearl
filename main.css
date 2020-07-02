@@ -15,6 +15,7 @@ a {
 /* Заголовок */
 
 .head {
+    padding: 50px;
     color: #ffffff;
     font-size: 57px;
     font-weight: 700;
@@ -30,7 +31,7 @@ a {
     background: #1f1f1f;
     background-image: url(img/Logo.svg), url(img/logo-brushes.svg), url(img/strip.svg);
     background-repeat: no-repeat;
-    background-position: center, center, bottom;
+    background-position: center, center, bottom -40px left;
     background-size: auto, auto, contain;
 }
 
@@ -178,27 +179,25 @@ a {
 
 main {
     background-image: url(img/background.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 80px 0;
 }
 
 
-/* Услуги детейлинга начало*/
+/* Второй раздел - Услуги детейлинга начало*/
 
 .service {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 25px;
-    grid-template-areas:
-        'wash wash wash paint paint paint'
-        'deteiling deteiling deteiling deteiling deteiling deteiling'
-        'tire tire tint tint pasting pasting'
-        'removing removing removing removing removing removing'
+    grid-gap: 50px;
+    grid-template-areas: 'wash wash wash paint paint paint' 'deteiling deteiling deteiling deteiling deteiling deteiling' 'tire tire tint tint pasting pasting' 'removing removing removing removing removing removing'
 }
 
 .block {
+    min-height: 370px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: 5px solid #ffffff;
@@ -209,10 +208,9 @@ main {
     display: inline-block;
     width: 100%;
     color: #ffffff;
-    font-size: 54px;
+    font-size: 40px;
     font-weight: 700;
     margin-left: 35px;
-    margin-top: 265px;
 }
 
 .car-wash {

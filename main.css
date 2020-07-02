@@ -7,8 +7,18 @@ a {
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
+}
+
+
+/* Заголовок */
+
+.head {
+    color: #ffffff;
+    font-size: 57px;
+    font-weight: 700;
+    text-align: center;
 }
 
 
@@ -177,13 +187,18 @@ main {
 /* Услуги детейлинга начало*/
 
 .service {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+        'wash wash wash paint paint paint'
+        'deteiling deteiling deteiling deteiling deteiling deteiling'
+        'tire tire tint tint pasting pasting'
+        'removing removing removing removing removing removing'
 }
 
 .block {
-    width: 565px;
-    height: 370px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: 5px solid #ffffff;
@@ -202,28 +217,66 @@ main {
 
 .car-wash {
     background-image: url(img/car-wash.jpg);
+    background-size: cover;
 }
 
 .paint-disks {
-    background-image: url(img/paint-disks.jpg)
+    background: url(img/paint-disks.jpg) no-repeat;
+    background-size: cover;
 }
 
 .deteiling {
-    background-image: url(img/detailing.jpg);
+    background: url(img/detailing.jpg) no-repeat;
+    background-size: cover;
 }
 
 .tire-service {
-    background-image: url(img/tire-service.jpg);
+    background: url(img/tire-service.jpg) no-repeat;
+    background-size: cover;
 }
 
 .tint {
-    background-image: url(img/tint.jpg);
+    background: url(img/tint.jpg) no-repeat;
+    background-size: cover;
 }
 
 .pasting {
-    background-image: url(img/pasting.jpg);
+    background: url(img/pasting.jpg) no-repeat;
+    background-size: cover;
 }
 
 .removing-dents {
-    background-image: url(img/removing-dents.jpg);
+    background: url(img/removing-dents.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/* Расположение карточек */
+
+.block:nth-child(1) {
+    grid-area: wash;
+}
+
+.block:nth-child(2) {
+    grid-area: paint;
+}
+
+.block:nth-child(3) {
+    grid-area: deteiling;
+}
+
+.block:nth-child(4) {
+    grid-area: tire;
+}
+
+.block:nth-child(5) {
+    grid-area: tint;
+}
+
+.block:nth-child(6) {
+    grid-area: pasting;
+}
+
+.block:nth-child(7) {
+    grid-area: removing;
 }

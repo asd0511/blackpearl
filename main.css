@@ -178,12 +178,12 @@ a {
 }
 
 .main {
-    background-image: url(img/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url(img/strip.svg), url(img/background.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-attachment: local, fixed;
     padding: 80px 0;
+    background-position-y: -30px;
 }
 
 
@@ -312,6 +312,15 @@ a {
     border-radius: 10px 0px 0px 10px;
 }
 
+/*
+
+.call-back__line {
+    background: url(img/strip.svg) no-repeat;
+    background-position-y: 0px;
+}
+
+*/
+
 .call-back_pic {
     margin-right: 40px
 }
@@ -355,4 +364,25 @@ form {
 
 .text-home {
     padding-bottom: 100px;
+}
+
+/* Партнеры */
+
+
+
+.parters-item {
+    display: flex;
+}
+
+.partner-item__pic:nth-child(-n+3){
+    margin-right: 15px;
+}
+
+.partner-head {
+    display: flex;
+    justify-content: center;
+}
+
+.partner-head__icon{
+    margin-left: 30px;
 }

@@ -13,14 +13,17 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* Sections
-   ========================================================================== */
+address {
+    font-style: normal;
+}
+
+
 
 /**
  * Remove the margin in all browsers.
  */
 
-body {
+ Sections, body {
   margin: 0;
 }
 
@@ -28,7 +31,7 @@ body {
  * Render the `main` element consistently in IE.
  */
 
-main {
+ain {
   display: block;
 }
 
@@ -37,9 +40,6 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-}
 
 /* Grouping content
    ========================================================================== */
@@ -345,4 +345,14 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* sedov_alexey@mail.ru */
+
+p, h2 {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }

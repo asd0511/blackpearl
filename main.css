@@ -63,6 +63,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: fixed;
+    right: 250px;
+    top: 55px;
 }
 
 .burger-name {
@@ -476,6 +479,9 @@ form {
     display: inline-block;
     text-decoration: none;
     color: white;
+}
+.footer-link:hover {
+    font-weight: 700;
 }
 .footer-list__item {
     margin: 5px 0 0 -40px;

@@ -350,7 +350,6 @@ template {
 /* sedov_alexey@mail.ru */
 
 p, h2 {
-  display: block;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;

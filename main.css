@@ -6,14 +6,6 @@ a {
     text-decoration: none;
 }
 
-p {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -48,10 +40,6 @@ p {
 }
 
 .header {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-between;
 }
@@ -236,6 +224,7 @@ p {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: 5px solid #ffffff;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -508,3 +497,238 @@ form {
     border: 1px solid #ffffff;
     cursor: pointer;
 }
+
+/* ---------------
+--------Медиа начало--------
+----------------------------*/
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 350px;
+        padding: 0 5px;
+    }
+    
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-size: 80%, contain, contain;
+    }
+    
+    .header {
+        margin-bottom: 10%;
+    }
+    
+    .icon-intro {
+        padding-right: 20px;
+        max-width: 30px;
+    }
+    
+    .head {
+        padding: 40px 12px;
+        font-size: 40px;
+    }
+    
+    .main {
+        background-image: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 1px;
+        background-position-y: 0px;
+    }
+    /*Гамбургер*/
+    
+    .burger {
+        right: 25px;
+        top: 24px;
+    }
+    
+    .burger-name {
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -5px;
+        font-size: 24px;
+    }
+    
+    .menu-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #222;
+    }
+    
+    .menu-btn span::before,
+    .menu-btn span::after {
+        content: '';
+        display: block;
+        transition: 0.2s;
+    }
+    
+    .menu-btn span::before {
+        transform: translateY(-5px);
+    }
+    
+    .menu-btn span::after {
+        transform: translateY(5px);
+    }
+    
+    .menu-btn_active span:before {
+        transform: rotate(-35deg);
+        width: 10px;
+        transform-origin: left bottom;
+    }
+    
+    .menu-btn_active span:after {
+        transform: rotate(35deg);
+        width: 10px;
+        transform-origin: left top;
+    }
+    
+    .menu-block {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .link-nav {
+        text-decoration: none;
+        color: #ffffff;
+        text-shadow: 0px 0px 6px #ff0000;
+        font-weight: 700;
+        display: flex;
+        margin-right: 20px;
+        transition: 1s;
+    }
+    
+    .link-nav:hover {
+        color: #A65353;
+        transition: 0s;
+        box-shadow: 0 0 0 0px #fff;
+    }
+    
+    .menu-nav {
+        transition: 0.2s;
+        transform: scaleX(0) translateX(0%);
+        transform-origin: right center;
+        opacity: 0;
+        visibility: hidden;
+        height: 50px;
+        line-height: 50px;
+        background-color: transparent;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: -25px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    
+    .menu-nav_active {
+        transform: scaleX(1) translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    /* Конец Гамбургера */
+    
+    .call-back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 0;
+    }
+    
+    .number {
+        max-width: 300px;
+        height: 90px;
+        box-shadow: inset 2px 0 13px rgba(0, 0, 0, 0.6);
+        background-color: #ffffff;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .call-back__line {
+        background: none;
+    }
+    
+    .call-back_pic {
+        display: none;
+    }
+    
+    .call-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .call-back_btn {
+        width: 300px;
+        height: 75px;
+        font-size: 35px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .service {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 50px;
+        grid-template-areas: 'wash' 'paint' 'deteiling' 'tire' 'tint' 'pasting' 'removing';
+    }
+    
+    .link {
+        width: none;
+    }
+    
+    .text-home {
+        padding: 0 10px 0 10px;
+    }
+    
+    .parters-item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    
+    .partner-head {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .partner-head__icon {
+        margin: 0 0 10px 0;
+    }
+    
+    .partner-item__pic:nth-child(-n+3) {
+    margin: 5px;
+}
+    
+    .galery_grid {
+        display: none;
+        /*   grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr) 1fr 1fr 1fr;
+        grid-gap: 0px;*/
+    }
+    
+    .btn-more {
+        width: 295px;
+    }
+    
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Медиа конец */

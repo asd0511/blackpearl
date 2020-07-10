@@ -384,7 +384,7 @@ form {
 }
 
 .description {
-    background-color: hsl(0, 0%, 100%, 0.5);
+    background-color: hsl(0, 0%, 100%, 0.6);
     background-image: url(img/strip.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -392,41 +392,73 @@ form {
     background-position-y: -56px;
 }
 
-
+.h3 {
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #333;
+    display: inline-block;
 }
+
 .text {
     font-size: 16px;
     line-height: 24px;
 }
+
 .text-home {
     padding-bottom: 100px;
 }
 
+.text-list {
+    list-style-type: none;
+}
+
+.text-list__item {
+    margin: 10px 0;
+}
+
+.text-list__link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.text-list__link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
 /* Партнеры */
+
 .parters-item {
     display: flex;
 }
+
 .partner-item__pic:nth-child(-n+3) {
     margin-right: 15px;
 }
+
 .partner-head {
     display: flex;
     justify-content: center;
 }
+
 .partner-head__icon {
     margin-left: 30px;
 }
 
+
 /* Фотогалерея начало */
+
 .galery_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
+
 .gallery-item {
     box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.2);
 }
+
 .btn-more {
     display: flex;
     justify-content: center;
@@ -441,52 +473,85 @@ form {
     line-height: 50px;
     cursor: pointer;
 }
+
 .gallery-foto:hover {
     transform: scale(1.1);
     transition-duration: 0.2s;
 }
+
 .btn-more:hover {
     box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.2);
 }
+
 .btn-more:active {
     box-shadow: none;
 }
 
+
 /* Фотогалерея конец */
 
+
 /* Footer */
+
 .footer {
     background-color: #1f1f1f;
     color: white;
     padding: 50px 0;
 }
+
 .footer-box {
     display: flex;
     justify-content: space-around;
 }
+
 .footer-link {
     display: inline-block;
     text-decoration: none;
     color: white;
+    margin: 5px 0;
 }
+
 .footer-link:hover {
     font-weight: 700;
 }
+
+.vk:hover {
+    color: #4680c2;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+.yt:hover {
+    color: #c4302b;
+}
+
+.inst:hover {
+    background: linear-gradient(to left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .footer-list__item {
     margin: 5px 0 0 -40px;
 }
+
 .footer-box__contact {
     max-width: 350px;
 }
+
 .text-footer {
     font-size: 16px;
     font-family: 'IBM Plex mono', sans-serif;
 }
+
 .field-mail {
     display: block;
     height: 35px;
     box-sizing: border-box;
 }
+
 .btn-mail {
     background-color: #111;
     background: url(img/email.svg) no-repeat;
@@ -498,36 +563,32 @@ form {
     cursor: pointer;
 }
 
+
 /* ---------------
 --------Медиа начало--------
 ----------------------------*/
+
 @media screen and (max-width: 768px) {
     .container {
         max-width: 350px;
         padding: 0 5px;
     }
-    
     .intro {
         display: flex;
-        justify-content: center;
         align-items: flex-end;
         background-size: 80%, contain, contain;
     }
-    
     .header {
         margin-bottom: 10%;
     }
-    
     .icon-intro {
         padding-right: 20px;
         max-width: 30px;
     }
-    
     .head {
         padding: 40px 12px;
         font-size: 40px;
     }
-    
     .main {
         background-image: url(img/background.jpg);
         background-repeat: no-repeat;
@@ -537,12 +598,10 @@ form {
         background-position-y: 0px;
     }
     /*Гамбургер*/
-    
     .burger {
         right: 25px;
         top: 24px;
     }
-    
     .burger-name {
         color: #fff;
         display: flex;
@@ -550,12 +609,10 @@ form {
         margin-right: -5px;
         font-size: 24px;
     }
-    
     .menu-btn {
         width: 50px;
         height: 50px;
     }
-    
     .menu-btn span,
     .menu-btn span::before,
     .menu-btn span::after {
@@ -568,41 +625,34 @@ form {
         height: 2px;
         background-color: #222;
     }
-    
     .menu-btn span::before,
     .menu-btn span::after {
         content: '';
         display: block;
         transition: 0.2s;
     }
-    
     .menu-btn span::before {
         transform: translateY(-5px);
     }
-    
     .menu-btn span::after {
         transform: translateY(5px);
     }
-    
     .menu-btn_active span:before {
         transform: rotate(-35deg);
         width: 10px;
         transform-origin: left bottom;
     }
-    
     .menu-btn_active span:after {
         transform: rotate(35deg);
         width: 10px;
         transform-origin: left top;
     }
-    
     .menu-block {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
     .link-nav {
         text-decoration: none;
         color: #ffffff;
@@ -612,13 +662,11 @@ form {
         margin-right: 20px;
         transition: 1s;
     }
-    
     .link-nav:hover {
         color: #A65353;
         transition: 0s;
         box-shadow: 0 0 0 0px #fff;
     }
-    
     .menu-nav {
         transition: 0.2s;
         transform: scaleX(0) translateX(0%);
@@ -634,21 +682,12 @@ form {
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
     }
-    
     .menu-nav_active {
         transform: scaleX(1) translateX(0%);
         opacity: 1;
         visibility: visible;
     }
     /* Конец Гамбургера */
-    
-    .call-back {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 120px 0;
-    }
-    
     .number {
         max-width: 300px;
         height: 90px;
@@ -658,27 +697,22 @@ form {
         box-sizing: border-box;
         border-radius: 10px 10px 0px 0px;
     }
-    
     .call-back__line {
         background: none;
     }
-    
     .call-back_pic {
         display: none;
     }
-    
     .call-mobile {
         display: flex;
         flex-direction: column;
     }
-    
     .call-back_btn {
         width: 300px;
         height: 75px;
         font-size: 35px;
         border-radius: 0px 0px 10px 10px;
     }
-    
     .service {
         display: grid;
         grid-template-columns: 1fr;
@@ -686,49 +720,38 @@ form {
         grid-gap: 50px;
         grid-template-areas: 'wash' 'paint' 'deteiling' 'tire' 'tint' 'pasting' 'removing';
     }
-    
-    .link {
-        width: none;
-    }
-    
     .text-home {
         padding: 0 10px 0 10px;
     }
-    
     .parters-item {
         display: flex;
         flex-direction: column;
         margin-top: 15px;
     }
-    
     .partner-head {
         display: flex;
         flex-flow: column;
     }
-    
     .partner-head__icon {
         margin: 0 0 10px 0;
     }
-    
     .partner-item__pic:nth-child(-n+3) {
-    margin: 5px;
-}
-    
+        margin: 5px;
+    }
     .galery_grid {
         display: none;
         /*   grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr) 1fr 1fr 1fr;
         grid-gap: 0px;*/
     }
-    
     .btn-more {
         width: 295px;
     }
-    
     .footer-box {
         display: flex;
         flex-direction: column;
     }
 }
+
 
 /* Медиа конец */

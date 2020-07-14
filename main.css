@@ -6,7 +6,7 @@ a {
     text-decoration: none;
 }
 
-.container {
+.wrapper {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -195,6 +195,7 @@ a {
 .icon-intro {
     padding-right: 30px;
     max-width: 40px;
+    box-sizing: content-box;
 }
 
 .main {
@@ -565,11 +566,11 @@ form {
 
 
 /* ---------------
---------Медиа начало--------
-----------------------------*/
+-------- Медиа начало --------
+--------------------------------*/
 
 @media screen and (max-width: 768px) {
-    .container {
+    .wrapper {
         max-width: 350px;
         padding: 0 5px;
     }
@@ -755,3 +756,97 @@ form {
 
 
 /* Медиа конец */
+
+
+/*------------ - - - - - - - - - - - - - --
+- - - - - - - Страница контакты  - - - - - -
+ - - - - - -- - - - - - -----------------*/
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.place,
+.video-contact {
+    margin-bottom: 150px;
+}
+
+.background {
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-c {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    margin: 70px 0
+}
+
+.text-w {
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.header-contact {
+    padding-top: 150px;
+}
+
+.button {
+    background-color: #E7D0C6;
+    color: #1F1F1F;
+    border: 1px solid #ffffff;
+    font-size: 25px;
+    border-radius: 10px;
+    min-width: 290px;
+    min-height: 80px;
+    margin-top: 35px;
+}
+
+.button:hover {
+    background-color: #d1c7c2;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.side-top {
+    padding-top: 170px;
+}
+
+.block-w {
+    border: 1px solid #ffffff;
+    padding: 40px;
+    margin: 1%;
+}
+
+.text-s {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.form-mail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.social__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .video-contact,
+    .form-mail {
+        display: none;
+    }
+}
